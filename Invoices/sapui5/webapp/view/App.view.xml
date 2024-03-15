@@ -2,15 +2,28 @@
     controllerName="logaligroup.SAPUI5.controller.App"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    displayBlock="true"
 >
-    <Button
-        text="{i18n>showHelloButtonText}"
-        press=".onShowHello"
-    />
-    <Input
-        value="{/recipient/name}"
-        description="Hello {/recipient/name}"
-        width="60%"
-        valueLiveUpdate="true"
-    />
+    <Shell>
+        <App>
+            <pages>
+                <Page title="{i18n>appTitle}">
+                    <headerContent>
+                        <Button
+                            id="helloDialogHeader"
+                            icon="sap-icon://action"
+                            press=".onOpenDialogHeader"
+                            class="sapUiSmallMarginEnd"
+                        />
+                    </headerContent>
+                    <content>
+                        <mvc:XMLView
+                            viewName="logaligroup.SAPUI5.view.HelloPanel"
+                        />
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
 </mvc:View>
