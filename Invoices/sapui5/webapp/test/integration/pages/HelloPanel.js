@@ -24,10 +24,10 @@ sap.ui.define([
             },
 
             assertions: {
-                iSeeTheHelloDialog: function() {
+                iSeeTheHelloDialog: function () {
                     return this.waitFor({
                         controlType: "sap.m.Dialog",
-                        success: function() {
+                        success: function () {
                             Opa5.assert.ok(true, "The dialog was open")
                         },
                         errorMessage: "Did not find the dialog control"
