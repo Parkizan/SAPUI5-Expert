@@ -1,0 +1,44 @@
+{
+    "Invoices": [
+        {
+            "ProductName": "Corsair RAM 16GB DDR4",
+            "Quantity": 2,
+            "ExtendedPrice": 1200.50,
+            "ShipperName": "UPS",
+            "ShippedDate": "2024-03-10T08:30:00",
+            "Status": "A"
+        },
+        {
+            "ProductName": "Logitech MX Master 3",
+            "Quantity": 1,
+            "ExtendedPrice": 1099.99,
+            "ShipperName": "FedEx",
+            "ShippedDate": "2024-03-12T14:45:00",
+            "Status": "B"
+        },
+        {
+            "ProductName": "Samsung 65-Inch QLED 4K",
+            "Quantity": 1,
+            "ExtendedPrice": 1799.99,
+            "ShipperName": "DHL",
+            "ShippedDate": "2024-03-08T11:20:00",
+            "Status": "A"
+        },
+        {
+            "ProductName": "Crucial MX500 1TB SSD",
+            "Quantity": 3,
+            "ExtendedPrice": 89.97,
+            "ShipperName": "UPS",
+            "ShippedDate": "2024-03-11T09:55:00",
+            "Status": "C"
+        },
+        {
+            "ProductName": "AMD Ryzen 9 5900X",
+            "Quantity": 1,
+            "ExtendedPrice": 119.99,
+            "ShipperName": "DHL",
+            "ShippedDate": "2024-03-09T16:10:00",
+            "Status": "C"
+        }
+    ]
+}
