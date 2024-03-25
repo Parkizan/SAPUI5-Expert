@@ -20,20 +20,21 @@ sap.ui.define([
                             errorMessage: "Did not find the 'Say Hello Dialog Button' on the HelloPanel view"
                         })
                     }
+                },
+
+                assertions: {
+                    iSeeTheHelloDialog: function () {
+                        return this.waitFor({
+                            controlType: "sap.m.Dialog",
+                            success: function () {
+                                Opa5.assert.ok(true, "The dialog was open")
+                            },
+                            errorMessage: "Did not find the dialog control"
+                        });
+                    }
                 }
             },
 
-            assertions: {
-                iSeeTheHelloDialog: function () {
-                    return this.waitFor({
-                        controlType: "sap.m.Dialog",
-                        success: function () {
-                            Opa5.assert.ok(true, "The dialog was open")
-                        },
-                        errorMessage: "Did not find the dialog control"
-                    });
-                }
-            }
         });
 
     });

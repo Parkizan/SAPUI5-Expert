@@ -66,7 +66,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "logaligroup.sapui5.i18n.i18n"
+                    "bundleName": "logaligroup.SAPUI5.i18n.i18n"
                 }
             },
             "invoices": {
@@ -98,7 +98,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "async": true,
-                "viewPath": "logaligroup.sapui5.view",
+                "viewPath": "logaligroup.SAPUI5.view",
                 "controlAggregation": "pages",
                 "controlId": "app",
                 "clearControlAggregation": false
@@ -106,19 +106,33 @@
             "routes": [
                 {
                     "name": "RouteApp",
-                    "pattern": "RouteApp",
+                    "pattern": "",
                     "target": [
-                        "TargetApp"
+                        "TargetOverview"
+                    ]
+                },
+                {
+                    "name": "Details",
+                    "pattern": "details/{invoicePath}",
+                    "target": [
+                        "TargetDetails"
                     ]
                 }
             ],
             "targets": {
-                "TargetApp": {
+                "TargetOverview": {
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
-                    "viewId": "App",
-                    "viewName": "App"
+                    "viewId": "Overview",
+                    "viewName": "Overview"
+                },
+                "TargetDetails": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "Details",
+                    "viewName": "Details"
                 }
             }
         },
